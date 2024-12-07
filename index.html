@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VestChic - Elegância e Conforto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/bolsas.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1>ㅤVestChic</h1>
+            <p>ㅤㅤElegância e conforto para todas as ocasiões.</p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler position-absolute top-0 end-0 m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a href="#calcas" class="nav-link">Calças</a></li>
+                        <li class="nav-item"><a href="#camisas" class="nav-link">Camisas</a></li>
+                        <li class="nav-item"><a href="#vestidos" class="nav-link">Vestidos</a></li>
+                        <li class="nav-item"><a href="#acessorios" class="nav-link">Acessórios</a></li>
+                        <li class="nav-item"><a href="#tenis" class="nav-link">Tênis</a></li>
+                        <li class="nav-item"><a href="#bermudas" class="nav-link">Bermudas</a></li>
+                    </ul>
+                    <a href="cadastro.html" class="btn btn-light">Cadastro</a>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+    </header>
+
+    <!-- Carrossel de Imagens -->
+    <section id="carrossel" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Descontos Imperdíveis</h2>
+            <div id="descontoCarrossel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/fotodeitada.webp" class="d-block mx-auto img-fluid" style="max-height: 400px;" alt="Desconto 1" alt="Desconto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/fotodeitada2.jpg" class="d-block mx-auto img-fluid" style="max-height: 400px;" alt="Desconto 1" alt="Desconto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/fotodeitada3.jpg" class="d-block mx-auto img-fluid" style="max-height: 400px;" alt="Desconto 1" alt="Desconto 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#descontoCarrossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#descontoCarrossel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque de Produtos -->
+    <section id="destaque" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2>Produtos em Destaque</h2>
+            <p>Confira os itens mais populares da nossa loja!</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="produto-calca1.html">
+                        <div class="card product-card">
+                            <img src="imagens/pexels-jt-kim-914472.jpg" class="card-img-top" alt="Calça Jeans">
+                            <div class="card-body">
+                                <h5 class="card-title">Calça Jeans</h5>
+                                <p class="card-text">R$99,90</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-3">
+                    <a href="#">
+                        <div class="card product-card">
+                            <img src="imagens/camisa2.webp" class="card-img-top" alt="Camisa Social">
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa Social</h5>
+                                <p class="card-text">R$99,90</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="produto-calca1.html">
+                        <div class="card product-card">
+                            <img src="imagens/vest2.jpg" class="card-img-top img-fluid" alt="Vestido Casual">
+                            <div class="card-body">
+                                <h5 class="card-title">Vestido Casual</h5>
+                                <p class="card-text">R$139,99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="produto-vestido1.html">
+                        <div class="card product-card">
+                            <img src="imagens/vestflor.jpg" class="card-img-top" alt="Vestido Florido">
+                            <div class="card-body">
+                                <h5 class="card-title">Vestido Florido</h5>
+                                <p class="card-text">R$139,90</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros e Categorias -->
+    <section id="filtros" class="py-3 bg-secondary text-white">
+        <div class="container">
+            <h2>Filtrar Produtos</h2>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="calcas.html" class="btn btn-outline-light mx-2 my-1">Calças</a>
+                <a href="camisas.html" class="btn btn-outline-light mx-2 my-1">Camisas</a>
+                <a href="vestidos.html" class="btn btn-outline-light mx-2 my-1">Vestidos</a>
+                <a href="acessorios.html" class="btn btn-outline-light mx-2 my-1">Acessórios</a>
+                <a href="tenis.html" class="btn btn-outline-light mx-2 my-1">Tênis</a>
+                <a href="bermuda.html" class="btn btn-outline-light mx-2 my-1">Bermudas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+     <main class="container my-5">
+        <div class="row">
+            <!-- Calças -->
+            <div class="col-md-4" id="calcas">
+                <h2>Calças</h2>
+                <div class="card mb-3">
+                    <img src="imagens/calca0.webp" class="card-img-top img-fluid" alt="Calça 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Jeans</h5>
+                        <p class="card-text">R$99,90 - Material confortável, ajuste perfeito.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="card mb-3">
+                    <img src="imagens/calca2.webp" class="card-img-top img-fluid" alt="Calça 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Social</h5>
+                        <p class="card-text">R$129,90 - Elegante para todas as ocasiões.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Camisas -->
+            <div class="col-md-4" id="camisas">
+                <h2>Camisas</h2>
+                <div class="card mb-3">
+                    <img src="imagens/camisa1.webp" class="card-img-top img-fluid" alt="Camisa 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisa Polo</h5>
+                        <p class="card-text">R$79,90 - Estilo casual e confortável.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+               
+                <div class="card mb-3">
+                    <img src="imagens/camisa2.webp" class="card-img-top img-fluid" alt="Camisa 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisa Social</h5>
+                        <p class="card-text">R$99,90 - Perfeita para um look mais formal.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Vestidos -->
+            <div class="col-md-4" id="vestidos">
+                <h2>Vestidos</h2>
+                <div class="card mb-3">
+                    <img src="imagens/vestflor.jpg" class="card-img-top img-fluid" alt="Vestido 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Vestido Casual</h5>
+                        <p class="card-text">R$139,90 - Elegância simples e confortável.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="card mb-3">
+                    <img src="imagens/vest2.jpg" class="card-img-top img-fluid" alt="Vestido 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vestido de Festa</h5>
+                        <p class="card-text">R$199,90 - Para brilhar em grandes eventos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <!-- Acessorios -->
+            <div class="col-md-4" id="acessorios">
+                <h2>Acessórios </h2>
+                <div class="card mb-3">
+                    <img src="imagens/acessorio1.jpg" class="card-img-top img-fluid" alt="Acessorio 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Oculos Escuros</h5>
+                        <p class="card-text">R$48,90 - Conforto e Estilo.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="card mb-3">
+                    <img src="imagens/acessorio2.jpg" class="card-img-top img-fluid" alt="Acessorio 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Chapéu de Praia</h5>
+                        <p class="card-text">R$59,90 - Para brilhar neste verão.</p>
+                    </div>
+                </div>
+            </div>
+        
+
+        <!-- Tenis -->
+        <div class="col-md-4" id="vestidos">
+            <h2>Tênis</h2>
+            <div class="card mb-3">
+                <img src="imagens/tenis3.jpg" class="card-img-top img-fluid" alt="Tênis 1">
+                <div class="card-body">
+                    <h5 class="card-title">Tênis Casual</h5>
+                    <p class="card-text">R$152,90 - Elegância simples e Estiloso.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card mb-3">
+                <img src="imagens/tenis2.jpg" class="card-img-top img-fluid" alt="Tênis 2">
+                <div class="card-body">
+                    <h5 class="card-title">Salto Alto</h5>
+                    <p class="card-text">R$359,90 - Para brilhar em grandes eventos.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Bermudas -->
+         <div class="col-md-4" id="bermudas">
+            <h2>Bermudas</h2>
+            <div class="card mb-3">
+                <img src="imagens/berma1.jpg" class="card-img-top img-fluid" alt="Bermuda 1">
+                <div class="card-body">
+                    <h5 class="card-title">Short Cargo Preto</h5>
+                    <p class="card-text">R$59,90 - Para sair confortável.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card mb-3">
+                <img src="imagens/berma2.webp" class="card-img-top img-fluid" alt="Bermuda 2">
+                <div class="card-body">
+                    <h5 class="card-title">short Cargo Bege</h5>
+                    <p class="card-text">R$59,90 - Para sair com colegas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário de Feedback -->
+    <div class="my-5">
+        <h2>Deixe seu Feedback</h2>
+        <form id="feedbackForm" onsubmit="return handleFeedback(event)">
+            <div class="form-group">
+                <label for="feedback">Sua opinião:</label>
+                <textarea id="feedback" class="form-control" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Avalie nosso site:</label>
+                <div class="star-rating" style="display: flex; flex-direction: row-reverse;">
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">★</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div id="feedbackMessage" class="mt-3 text-success" style="display:none;">
+            Seu feedback foi enviado com sucesso!
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #111; color: #fff; padding: 40px 20px; font-size: 14px;">
+        <div class="container">
+            <div class="row">
+                <!-- Suporte ao Cliente -->
+                <div class="col-md-3 mb-4">
+                    <h5 style="color: #fff;">Suporte ao Cliente</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="central.html" target="_blank" style="color: #ccc; text-decoration: none;">Central de Ajuda</a></li>
+                        <li><a href="pergfreq.html" target="_blank" style="color: #ccc; text-decoration: none;">Perguntas Frequentes</a></li>
+                        <li><a href="pdd.html" target="_blank" style="color: #ccc; text-decoration: none;">Trocas e Devoluções</a></li>
+                        <li><a href="pdp.html" target="_blank" style="color: #ccc; text-decoration: none;">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Links Úteis -->
+                <div class="col-md-3 mb-4">
+                    <h5 style="color: #fff;">Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" target="_blank" style="color: #ccc; text-decoration: none;">Trabalhe Conosco</a></li>
+                        <li><a href="pdp.html" target="_blank" style="color: #ccc; text-decoration: none;">Política de Privacidade</a></li>
+                        <li><a href="central.html" target="_blank" style="color: #ccc; text-decoration: none;">Termos de Uso</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-4">
+                    <h5 style="color: #fff;">Conecte-se Conosco</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.instagram.com/vestchic_store?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color: #ccc; text-decoration: none;"><i class="bi bi-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/vestchic_store?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color: #ccc; text-decoration: none;"><i class="bi bi-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.link/bu9qkj" target="_blank" style="color: #ccc; text-decoration: none;"><i class="bi bi-twitter"></i> WhatsApp </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Informações Legais -->
+                <div class="col-md-3 mb-4">
+                    <h5 style="color: #fff;">Informações</h5>
+                    <p style="color: #ccc; font-size: 13px;">VestChic © 2024. Todos os direitos reservados.</p>
+                    <p style="color: #ccc; font-size: 13px;">CNPJ: 32.467.918/0001-85</p>
+                    <p style="color: #ccc; font-size: 13px;">Rua Miguel Couto, n106, Cubatão, São Paulo.</p>
+                </div>
+            </div>
+    
+            <div class="text-center mt-4" style="border-top: 1px solid #333; padding-top: 20px;">
+                <p style="color: #ccc;">Desenvolvido por Cauê Almeida, Ketlyn Victoria Alves e Lais Sena.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Scripts do Bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+     <!-- Script de Feedback -->
+     <script>
+         function handleFeedback(event) {
+             event.preventDefault();
+             // Exibe a mensagem de sucesso
+             document.getElementById("feedbackMessage").style.display = "block";
+             // Limpa o formulário
+             document.getElementById("feedbackForm").reset();
+         }
+     </script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+/* Definindo a cor de fundo do corpo da página */
+body {
+    background-color: #ffffff; /* Fundo branco */
+    font-family: Arial, sans-serif; /* Fonte básica */
+    color: #333; /* Cor do texto em um tom escuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste geral para containers principais */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Estilo para cabeçalhos */
+h1, h2 {
+    color: #cfcfcf; /* Cor escura para cabeçalhos */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os links */
+a {
+    color: #007bff; /* Cor padrão dos links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha os links quando o cursor passa por cima */
+}
+
+/* Estilo para o formulário de cadastro */
+form {
+    background-color: #f9f9f9; /* Fundo claro para formulários */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo para os campos de entrada de dados */
+input[type="email"], input[type="password"], input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Cor suave para a borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Para não quebrar o layout */
+}
+
+input[type="submit"], button[type="submit"] {
+    background-color: #007bff; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de mensagens de confirmação */
+#confirmacao {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#feedback-text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[name="star"] {
+    margin: 5px;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Menu Desktop */
+.menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-desktop ul li {
+    margin-right: 20px;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Menu Mobile */
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu-mobile nav ul {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-mobile nav ul li {
+    margin-bottom: 20px;
+}
+
+.menu-mobile nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Botão de abrir menu */
+.bt-abrir-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Botão de fechar menu */
+.bt-fechar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .bt-abrir-menu {
+        display: block;
+    }
+}
+
+.star-rating {
+    display: flex;
+    direction: row-reverse;
+    justify-content: center;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+.star-rating input:checked~label,
+.star-rating input:hover~label {
+    color: gold;
+}
