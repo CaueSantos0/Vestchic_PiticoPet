@@ -88,28 +88,5 @@ function renderCart() {
     });
 }
 
-let lastScroll = 0;
-    const navbar = document.querySelector('.navbar');
 
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > lastScroll) {
-            // Rolando para baixo
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            // Rolando para cima
-            navbar.style.transform = 'translateY(0)';
-        }
-
-        lastScroll = currentScroll;
-    });
-
-    function toggleQRCode() {
-        const qrCodeContainer = document.getElementById('qr-code-container');
-        if (qrCodeContainer.style.display === 'none' || !qrCodeContainer.style.display) {
-            qrCodeContainer.style.display = 'block';
-        } else {
-            qrCodeContainer.style.display = 'none';
-        }
-    }
+    

@@ -406,7 +406,7 @@
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
  
-     <!-- Script de Feedback -->
+    
      <script>
          function handleFeedback(event) {
              event.preventDefault();
@@ -415,6 +415,32 @@
              // Limpa o formulário
              document.getElementById("feedbackForm").reset();
          }
+
+         function toggleQRCode() {
+        const qrCodeContainer = document.getElementById('qr-code-container');
+        if (qrCodeContainer.style.display === 'none' || !qrCodeContainer.style.display) {
+            qrCodeContainer.style.display = 'block';
+        } else {
+            qrCodeContainer.style.display = 'none';
+        }
+    }
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll) {
+            // Rolando para baixo
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            // Rolando para cima
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScroll = currentScroll;
+    });
+
      </script>
 
 </body>
