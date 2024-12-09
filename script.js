@@ -64,3 +64,26 @@ document.addEventListener("DOMContentLoaded", function () {
         menuMobile.style.display = isMenuVisible ? "none" : "block";
     }
 });
+
+// Lógica para adicionar itens ao carrinho
+const cartItems = [];
+
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+        const product = button.getAttribute('data-product');
+        cartItems.push(product);
+        renderCart();
+    });
+});
+
+function renderCart() {
+    const cartItemsList = document.getElementById('cart-items');
+    cartItemsList.innerHTML = '';
+
+    cartItems.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        li.className = 'list-group-item';
+        cartItemsList.appendChild(li);
+    });
+}

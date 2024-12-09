@@ -229,3 +229,32 @@ input[name="star"] {
     transform: scale(1.03); /* Aumenta ligeiramente o tamanho */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
   }
+
+  /* Estilo para o nav fixo */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Cards de produtos */
+.product-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.product-card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
