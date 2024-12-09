@@ -104,3 +104,12 @@ let lastScroll = 0;
 
         lastScroll = currentScroll;
     });
+
+    function toggleQRCode() {
+        const qrCodeContainer = document.getElementById('qr-code-container');
+        if (qrCodeContainer.style.display === 'none' || !qrCodeContainer.style.display) {
+            qrCodeContainer.style.display = 'block';
+        } else {
+            qrCodeContainer.style.display = 'none';
+        }
+    }
