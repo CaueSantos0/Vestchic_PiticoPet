@@ -17,7 +17,7 @@
             <h1>ㅤVestChic</h1>
             <p>ㅤㅤElegância e conforto para todas as ocasiões.</p>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <button class="navbar-toggler position-absolute top-0 end-0 m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,32 @@
                 </div>
             </div>
         </nav>
-        <br>
+
+        <div id="cart-icon" class="position-fixed top-0 end-0 m-3">
+            <button class="btn btn-dark" id="open-cart">
+                <i class="bi bi-cart"></i>
+            </button>
+        </div>
+        <div id="cart-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Carrinho</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="cart-items" class="list-group">
+                            <!-- Itens serão adicionados aqui dinamicamente -->
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <br>
     </header>
 
@@ -272,12 +297,6 @@
             </div>
         </section>
         
-
-    <!-- Carrinho -->
-      <section id="carrinho" class="container mt-4">
-        <h2 class="text-center mb-4">Carrinho</h2>
-        <ul id="cart-items" class="list-group"></ul>
-        </section>
 
     <!-- Formulário de Feedback -->
     <div class="my-5">
